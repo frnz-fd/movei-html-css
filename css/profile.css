@@ -1,0 +1,467 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    direction: ltr;
+    margin: 0;
+
+}
+
+/*header*/
+
+header {
+
+    display: flex;
+    justify-content: space-around;
+    width: 1280px;
+    height: 64px;
+    background-color: rgb(54, 3, 3);
+    color: #fff;
+    font-family: Arial;
+}
+
+header>a>svg {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 10px;
+}
+
+.header-left {
+    width: 400px;
+    margin-left: 0;
+}
+
+.header-left>ul {
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    padding: 0;
+}
+
+.header-left>ul>li {
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+}
+
+.header-left>ul>li>ul {
+    list-style: none;
+    cursor: pointer;
+    display: none;
+    padding: 0;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    color: black;
+    margin-top: 10px;
+    z-index: 20;
+    position: relative;
+}
+
+.header-left>ul>li:hover>ul {
+    display: block;
+}
+
+.header-left>ul>li>ul>li {
+    list-style: none;
+    cursor: pointer;
+    text-align: left;
+    width: 190px;
+    padding: 5px;
+}
+
+.header-right {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-right>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200px;
+    line-height: 60px;
+}
+
+
+.header-right>a>svg {
+    margin: 3px 0;
+}
+
+.header-right-Avatar {
+    position: relative;
+    bottom: 10px;
+    padding: 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.header-right-Avatar>li {
+    display: none;
+}
+
+.header-right-Avatar:hover>li {
+    position: absolute;
+    top: 50px;
+    left: -40px;
+    z-index: 20;
+    display: block;
+    background: rgb(255, 255, 255);
+    width: 150px;
+    color: rgb(0, 0, 0);
+    text-decoration: center;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.header-right-Avatar>li>ul {
+    display: block;
+    padding: 0;
+    list-style: none;
+}
+
+.header-right-Avatar>li>ul>li:hover {
+    display: block;
+    background-color: rgb(47, 2, 2);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-right-Avatar>li>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-right-Avatar>li>ul>li:hover>a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-right-plus {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.header-right>.header-right-search {
+    padding-top: 15px;
+}
+
+/*main*/
+
+h2,
+h3 {
+    text-shadow: 1px 1px 20px rgb(23, 10, 10);
+    font-size: xx-large;
+    position: relative;
+    top: -300px;
+    left: 100px;
+    width: 1000px;
+}
+
+h1 {
+    display: none;
+}
+
+main {
+    margin: 0;
+
+    background-image: url("../img/background6.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial;
+}
+
+.setting>h3 {
+    width: 260px;
+    margin: 10px 0 10px 0;
+    position: static;
+    top: 0;
+    left: 0;
+    position: relative;
+    color: orange;
+}
+
+.setting {
+    margin: auto;
+    position: relative;
+    top: -30px;
+    border: 1px solid rgb(54, 3, 3);
+    width: 260px;
+    height: 470px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.setting::before {
+    border-radius: 10px;
+    content: "";
+    background-color: rgb(54, 3, 3);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+.setting>ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.setting>ul>li {
+    position: relative;
+    cursor: pointer;
+    height: 45px;
+    line-height: 40px;
+    
+}
+
+.setting>ul>li>a {
+    text-decoration: none;
+    color:white;
+   
+    padding:12px 85px;
+}
+
+.setting>ul>li>a:hover {
+    text-decoration: none;
+   color:black;
+}
+
+.setting>ul>li:hover {
+    background-color: orange;
+    color: black;
+}
+
+.setting-main {
+    margin: 20px auto;
+    position: relative;
+    top: 10px;
+    border: 1px solid rgb(54, 3, 3);
+    width: 950px;
+
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.setting-main>h2 {
+    width: 200px;
+    font-size: larger;
+    margin: 20px 0 0 0;
+    position: static;
+    top: 0;
+    left: 0;
+    position: relative;
+    color: orange;
+}
+
+.setting-main-change {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin: 40px 0 10px 50px;
+    cursor: pointer;
+}
+
+
+
+.email {
+    position: relative;
+    width: 500px;
+}
+
+.email label {
+    color: orange;
+    margin-right: 355px;
+    line-height: 30px;
+}
+
+.email input {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.change-password:hover,
+.change-email:hover {
+    background-color: rgb(50, 3, 1);
+    color: white;
+}
+
+.change-password,
+.change-email {
+    background: rgb(255, 204, 0);
+    color: black;
+    font-weight: bold;
+    line-height: 39px;
+    border-radius: 10px;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+}
+
+
+.setting-main::before {
+    border-radius: 10px;
+    content: "";
+    background-color: rgb(54, 3, 3);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+.setting-main-avatar {
+    position: relative;
+    text-align: left;
+
+    width: 400px;
+    margin-left: 50px;
+    line-height: 10px;
+}
+
+.avatar-link {
+    color: orange;
+    cursor: pointer;
+}
+
+.setting-main-gender {
+    margin: 20px 3em;
+    line-height: 2em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+
+}
+
+.setting-main-gender select {
+    width: 100px;
+    height: 40px;
+}
+
+.setting-main-gender label {
+    margin-right: 50px;
+    color: orange;
+}
+
+.setting-main-name {
+    margin-left: 50px;
+}
+
+.setting-main-name label {
+    margin-right: 350px;
+    color: orange;
+}
+
+.setting-main-name input {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.description {
+    position: relative;
+    color: orange;
+}
+
+.description>span {
+    margin-right: 770px;
+}
+
+.description>textarea {
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    resize: vertical;
+    width: 890px;
+    height: 61.3333px;
+    margin-left: 30px;
+}
+
+.button-save {
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px 0 20px 45px;
+    cursor: pointer;
+}
+
+.button-save:hover {
+
+    background-color: rgb(255, 140, 0);
+    color: black;
+
+}
+
+/*bottom*/
+.bottom {
+    padding-top: 40px;
+    height: 320px;
+    background-color: rgb(54, 3, 3);
+}
+
+.bottom-in {
+    margin: auto;
+    display: flex;
+    width: 900px;
+    height: 200px;
+    color: white;
+    font-family: Arial;
+
+}
+
+.bottom-column>ul>h3 {
+
+    width: 150px;
+    font-weight: bold;
+    font-size: 1.4em;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 0;
+}
+
+.bottom-column>ul {
+    cursor: pointer;
+    list-style: none;
+    margin: 100px 5px;
+    width: 140px;
+}
+
+.bottom-butt {
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(54, 3, 3);
+    height: 40px;
+    width: 190px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bottom-butt>a {
+    text-decoration: none;
+    color: rgb(54, 3, 3);
+}
