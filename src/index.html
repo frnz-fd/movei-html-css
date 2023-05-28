@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="flex justify-around h-16 w-screen bg-red-950 text-white font-sans">
+    <header class="flex justify-around h-16 w-screen bg-red-950 text-white font-sans max-sm:sticky max-sm:top-0 max-sm:w-full max-sm:overflow-hidden max-sm:z-50">
         <a class="" href="../html/index.html">
             <h1 class="hidden">The Movie Database</h1>
             <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="160px" height="150px"
@@ -36,28 +36,27 @@
                 </g>
             </svg>
         </a>
-        <nav class="w-fit ">
+        <nav class="w-fit">
             <ul class="flex list-none cursor-pointer py-4">
-                <li id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
-                    class="group cursor-pointer text-center w-24 relative">Movies
-                    <ul id="dropdownHover" class="hidden p-0 bg-white rounded-lg w-52 text-black z-20 absolute">
+                <li class=" group cursor-pointer text-center w-24 relative">Movies
+                    <ul class="hidden p-0 bg-white rounded-lg w-52 text-black z-20 absolute">
                         <li><a
-                                class="group-hover:block cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">Popular</a>
+                                class="group-hover: cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">Popular</a>
                         </li>
                         <li><a
-                                class="group-hover:block cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">Now
+                                class="group-hover: cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">Now
                                 Playing</a></li>
                         <li><a
-                                class="group-hover:block cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">Upcoming</a>
+                                class=" group-hover: cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">Upcoming</a>
                         </li>
                         <li><a
-                                class="group-hover:block cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">Top
+                                class=" group-hover: cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">Top
                                 Rated</a></li>
                     </ul>
                 </li>
-                <li class="group cursor-pointer text-center w-24 relative">Tv Shows
+                <li class=" group cursor-pointer text-center w-24 relative">Tv Shows
                     <ul class=" hidden p-0 bg-white rounded-lg w-52 text-black z-20 absolute">
-                        <li class="group-hover:block cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">
+                        <li class=" group-hover:block cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">
                             Popular</li>
                         <li class="group-hover:block cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">
                             Airing Today</li>
@@ -68,13 +67,13 @@
                     </ul>
                 </li>
                 <li class="group cursor-pointer text-center w-24 relative">People
-                    <ul class=" hidden p-0 bg-white rounded-lg w-52 text-black z-20 absolute">
+                    <ul class="hidden p-0 bg-white rounded-lg w-52 text-black z-20 absolute">
                         <li class="group-hover:block cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">
                             Popular People</li>
                     </ul>
                 </li>
                 <li class="group cursor-pointer text-center w-24 relative">More
-                    <ul class=" hidden p-0 bg-white rounded-lg w-52 text-black z-20 absolute">
+                    <ul class="hidden p-0 bg-white rounded-lg w-52 text-black z-20 absolute">
                         <li class="group-hover:block cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">
                             Discussions</li>
                         <li class="group-hover:block cursor-pointer text-left w-48 p-1 hover:bg-slate-200 rounded-lg">
@@ -87,7 +86,8 @@
                 </li>
             </ul>
         </nav>
-        <div class="w-1/4 flex justify-between text-white outline-white py-4">
+    
+        <div id="myTopnav" class="max-sm:hidden w-1/4 flex justify-between text-white outline-white py-4">
             <a class="no-underline h-fit" href="#">+</a>
             <a class="no-underline h-fit" href="#">En</a>
             <a class="no-underline h-fit" href="login.html">Login</a>
@@ -105,13 +105,13 @@
 
 
     <main class="w-screen">
-        <section class="h-80  z-1">
+       <section class="h-80 z-1">
             <img class="h-full w-full" src="../img/img7.jpg">
-            <div class="text-white drop-shadow-lg relative bottom-64 left-24 font-bold">
-                <h2 class="text-5xl"> Welcome.</h2>
-                <h3 class="text-3xl">Millions of movies, TV shows and people to discover. Explore now.</h3>
+            <div class="text-white drop-shadow-lg relative bottom-64 left-24 font-bold max-sm:left-4 ">
+                <h2 class="text-5xl max-sm:text-4xl"> Welcome.</h2>
+                <h3 class="text-3xl max-sm:text-2xl">Millions of movies, TV shows and people to discover. Explore now.</h3>
             </div>
-            <form class="relative bottom-56 left-24 text-black" id="main_search_form"
+            <form class="relative bottom-56 left-24 text-black max-sm:left-7" id="main_search_form"
                 action="https://www.themoviedb.org/search" method="get" accept-charset="utf-8">
                 <label>
                     <input class="outline-none w-4/5 h-11 rounded-3xl px-8" dir="auto" id="main_search_v4" name="query"
@@ -126,7 +126,7 @@
 
 
 
-        <section class="p-2.5 text-white bg-[url('../img/background1.jpg')]">
+        <section class="p-2.5 text-white bg-[url('../img/background1.jpg')] w-full">
             <span class="font-extrabold text-lg font-sans px-4">Trending</span>
             <span class="border-red-950 border border-solid rounded-3xl py-1">
                 <input class="bg-inherit focus:ring-orange-500 hidden accent-pink-300" type="radio" id="radio1"
@@ -142,8 +142,8 @@
                     for="radio2">This Week</label>
             </span>
 
-            <div class="px-1 py-2 my-1 mx-3.5 h-96 w-full ">
-                <ul class="flex overflow-x-auto space-x-8 list-none  p-0 h-full w-full py-4 px-1">
+            <div class="px-1 py-2 h-96 w-full">
+                <ul class="flex overflow-x-auto space-x-8 list-none p-0 h-full w-full py-4 px-1 ">
                     <li class="flex-shrink-0 w-36 text-center h-56 text-center cursor-pointer relative">
                         <a href="dungeons-dragons-honor-among-thieves.html">
                             <div class="mb-2"><img class="rounded-lg h-full w-full" src="../img/today1.jpg"></div>
@@ -296,7 +296,7 @@
             </span>
 
 
-            <div class="px-1 py-2 my-1 mx-3.5 h-80 w-full text-white">
+            <div class="px-1 py-2 h-80 w-full text-white overflow-hidden">
                 <ul class="flex overflow-x-auto space-x-8 list-none  p-0 h-full w-full py-4 px-1">
                     <li class="flex-shrink-0 w-80 text-center h-56 text-center cursor-pointer relative">
                         <a href="#">
@@ -361,8 +361,8 @@
 
 
 
-            <div class="px-1 py-2 my-1 mx-3.5 h-96 w-full ">
-                <ul class="flex overflow-x-auto space-x-8 list-none  p-0 h-full w-full py-4 px-1">
+            <div class="px-1 py-2  h-96 w-full ">
+                <ul class="flex overflow-x-auto space-x-8 list-none p-0 h-full w-full py-4 px-1">
                     <li class="flex-shrink-0 w-36 text-center h-56 text-center cursor-pointer relative">
                         <a href="#">
                             <div class="mb-2"><img class="rounded-lg h-full w-full" src="../img/today1.jpg"></div>
@@ -497,19 +497,22 @@
             </div>
         </section>
 
-        <section class="p-4 m-0 bg-cover h-80 bg-[url('../img/background4.jpg')] text-white flex justify-between font-sans">
-            <div class="my-10 mx-9 text-lg">
-                <h2 class="text-5xl font-extrabold">Join Now</h2><br>
-                <p>Get access to maintain your own custom personal lists, track what you've seen and search and
+        <section
+            class="p-4 m-0 bg-cover h-80 bg-[url('../img/background4.jpg')] text-white flex justify-between font-sans">
+            <div class="my-10 mx-9 text-lg max-sm:mt-1 max-sm:mx-3 max-sm:w-96 max-sm:h-40 ">
+                <h2 class="mb-4 text-5xl max-sm:text-4xl font-extrabold">Join Now</h2>
+                <p class="font-semibold text-justify max-sm:w-80 max-sm:h-40">Get access to maintain your own custom personal lists, track what you've seen and search and
                     filter for
                     what to watch next—regardless if it's in theatres, on TV or available on popular streaming
                     services like
                     .</p>
                 <a>
-                    <p class="font-semibold leading-10 my-4 w-24 h-11 rounded-lg bg-red-950 text-center cursor-pointer hover:bg-red-900">Sign Up</p>
+                    <p
+                        class="font-semibold leading-10 my-4 max-sm:mt-8 w-24 h-11 rounded-lg bg-red-950 text-center cursor-pointer hover:bg-red-900">
+                        Sign Up</p>
                 </a>
             </div>
-            <div class="my-auto mx-9">
+            <div class="my-auto mx-9 max-sm:mr-4 max-sm:ml-8">
                 <ul class="list-disc">
                     <li>Enjoy TMDB ad free</li>
                     <li>Maintain a personal watchlist</li>
@@ -521,9 +524,11 @@
             </div>
         </section>
     </main>
-    <section class="w-screen pt-10 h-80 bg-red-950">
-        <div class="m-auto">
-            <div><svg xmlns="http://www.w3.org/2000/svg" width="180px" height="180px"
+
+
+    <section class=" w-screen h-80 bg-red-950 pt-12 max-sm:pt-1">
+        <div class="max-sm-h-fit m-auto h-fit flex space-x-8 w-fit  text-white font-sans">
+            <div class=" max-sm:ml-12 h-fit max-sm:mt-20"><svg class="max-sm:w-24 max-sm:h-24 max-sm:mb-4" xmlns="http://www.w3.org/2000/svg" width="180px" height="180px"
                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 185.04 133.4">
                     <defs>
                         <linearGradient id="linear-gradient" y1="66.7" x2="185.04" y2="66.7"
@@ -541,45 +546,59 @@
                         </g>
                     </g>
                 </svg>
-                <div class="bottom-butt"><a href="#">JOIN THE COMMUNITY</a></div>
+                <div class=" p-1 leading-10 cursor-pointer font-bold text-center w-48 max-sm:w-24 max-sm:text-sm h-12 bg-white rounded-lg"><a
+                        class="no-underline text-red-950 hover:text-orange-500" href="#">JOIN THE COMMUNITY</a></div>
             </div>
-            <div class="bottom-column">
-                <ul>
-                    <h3>The Basics</h3>
-                    <li>About TMDB</li>
-                    <li>Contact Us</li>
-                    <li>Support Forums</li>
-                    <li>API</li>
-                    <li>System Status</li>
+            <div class=" m-0 h-40 w-4/5 flex space-x-8 max-sm:h-80 max-sm:w-96 max-sm:flex-wrap max-sm:space-x-0 ">
+            <div class=" max-sm:w-40  max-sm:relative max-sm:bottom-4">
+                <ul class=" mt-12 cursor-pointer max-sm:mt-10">
+                    <h3 class="font-bold text-2xl w-32 max-sm:text-lg">The Basics</h3>
+                    <li class="max-sm:text-sm">About TMDB</li>
+                    <li class="max-sm:text-sm">Contact Us</li>
+                    <li class="max-sm:text-sm">Support Forums</li>
+                    <li class="max-sm:text-sm">API</li>
+                    <li class="max-sm:text-sm">System Status</li>
                 </ul>
             </div>
-            <div class="bottom-column">
-                <ul>
-                    <h3>Get Involved</h3>
-                    <li>Contribution Bible</li>
-                    <li>Add New Movie</li>
-                    <li>Add New TV Show</li>
+            <div class="max-sm:w-40  max-sm:relative max-sm:bottom-4">
+                <ul class=" mt-12 cursor-pointer max-sm:mt-10">
+                    <h3 class="font-bold text-2xl w-36 max-sm:text-lg">Get Involved</h3>
+                    <li class="max-sm:text-sm">Contribution Bible</li>
+                    <li class="max-sm:text-sm">Add New Movie</li>
+                    <li class="max-sm:text-sm">Add New TV Show</li>
                 </ul>
             </div>
-            <div class="bottom-column">
-                <ul>
-                    <h3>Community</h3>
-                    <li>Guidelines</li>
-                    <li>Discussions</li>
-                    <li>Leaderboard</li>
-                    <li>Twitter</li>
+            <div class=" max-sm:w-40  max-sm:relative max-sm:bottom-4">
+                <ul class=" mt-12 cursor-pointer max-sm:mt-6">
+                    <h3 class="font-bold text-2xl w-32 max-sm:text-lg">Community</h3>
+                    <li class="max-sm:text-sm">Guidelines</li>
+                    <li class="max-sm:text-sm">Discussions</li>
+                    <li class="max-sm:text-sm">Leaderboard</li>
+                    <li class="max-sm:text-sm">Twitter</li>
                 </ul>
             </div>
-            <div class="bottom-column">
-                <ul>
-                    <h3>Legal</h3>
-                    <li>Terms of Use</li>
-                    <li>API Terms of Use</li>
-                    <li>Privacy Policy</li>
+            <div class=" max-sm:w-40 max-sm:relative max-sm:bottom-4">
+                <ul class="mt-12 cursor-pointer max-sm:mt-6">
+                    <h3 class="font-bold text-2xl w-32 max-sm:text-lg">Legal</h3>
+                    <li class="max-sm:text-sm">Terms of Use</li>
+                    <li class="max-sm:text-sm">API Terms of Use</li>
+                    <li class=" max-sm:text-sm">Privacy Policy</li>
                 </ul>
             </div>
         </div>
+        </div>
     </section>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </body>
 
 </html>
