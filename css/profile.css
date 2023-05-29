@@ -227,7 +227,6 @@ main {
 .setting>ul>li>a {
     text-decoration: none;
     color:white;
-   
     padding:12px 85px;
 }
 
@@ -290,6 +289,7 @@ main {
     height: 40px;
     border-radius: 5px;
     border: none;
+    padding:0 15px;
 }
 
 .change-password:hover,
