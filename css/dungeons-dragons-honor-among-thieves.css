@@ -456,7 +456,7 @@ h1 {
 
 .Top-Billed-Cast-person-pic>img {
     border-radius: 15px 15px 0 0;
-    height: 80%;
+    height: 75%;
     width: 100%;
     margin-bottom: 5px;
 }
@@ -479,6 +479,15 @@ h1 {
     color: rgb(72, 72, 72);
 }
 
+#popular-txt1,
+#popular-txt2,
+#popular-txt3,
+#popular-txt4,
+#popular-txt5,
+#popular-txt6{
+   top:10px;
+   position:relative;
+}
 
 .full-Cast-Crew>a {
     margin-left: 40px;
@@ -526,6 +535,7 @@ h1 {
     height: 30px;
     border-radius: 15px;
     line-height: 30px;
+    cursor: pointer;
 }
 
 /*Recommendations*/
