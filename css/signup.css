@@ -130,7 +130,7 @@ main {
 .login {
     margin: auto;
     position: relative;
-    top: 20px;
+    top: 15px;
     border: 1px solid rgb(54, 3, 3);
     width: 500px;
     height: 470px;
@@ -223,7 +223,7 @@ main {
     border-radius: 15px;
     height: 30px;
     line-height: 30px;
-    padding: 0 5px;
+    padding: 0 10px;
     cursor: pointer;
 }
 
