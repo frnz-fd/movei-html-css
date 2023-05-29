@@ -14,7 +14,7 @@ header {
 
     display: flex;
     justify-content: space-around;
-    width: 1280px;
+    width: screen;
     height: 64px;
     background-color: rgb(54, 3, 3);
     color: #fff;
@@ -168,7 +168,7 @@ h1 {
 
 main {
     margin: 0;
-
+    padding:10px;
     background-image: url("../img/background6.png");
     background-size: cover;
     display: flex;
@@ -187,9 +187,8 @@ main {
 }
 
 .setting {
-    margin: auto;
+    margin:0 auto;
     position: relative;
-    top: -30px;
     border: 1px solid rgb(54, 3, 3);
     width: 260px;
     height: 470px;
@@ -243,12 +242,10 @@ main {
 }
 
 .setting-main {
-    margin: 20px auto;
+    margin:0 auto;
     position: relative;
-    top: 10px;
     border: 1px solid rgb(54, 3, 3);
     width: 950px;
-
     text-align: center;
     border-radius: 10px;
     color: white;
@@ -273,7 +270,9 @@ main {
     cursor: pointer;
 }
 
-
+.setting-main-change > a{
+    padding:0 5px;
+}
 
 .email {
     position: relative;
