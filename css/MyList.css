@@ -231,6 +231,7 @@ main {
 .setting>ul>li>a {
     text-decoration: none;
     color: white;
+    padding:12px 85px;
 }
 
 .setting>ul>li>a:hover {
