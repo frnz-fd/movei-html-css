@@ -177,7 +177,6 @@ main {
 }
 
 .login-butt {
-
     display: flex;
     justify-content: space-between;
     margin: 20px 110px;
@@ -197,7 +196,7 @@ main {
     border-radius: 15px;
     height: 30px;
     line-height: 30px;
-    padding: 0 5px;
+    padding: 0 10px;
     cursor: pointer;
 }
 
